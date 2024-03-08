@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/reg.css">
+
+</head>
+<body>
+    <form id="registerForm">
+        <h1>REGISTER</h1>
+        <label for="username">
+            <b>Username <input type="text" placeholder="Enter Username" name="username"></b>
+        </label>
+        <label for="name">
+            <b>Name <input type="text" placeholder="Enter Name" name="name"></b>
+        </label>
+        <label for="gender">
+            <b>Gender
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </b>
+        </label>
+        <label for="password">
+            <b>Password <input type="password" placeholder="Enter Password" name="password"></b>
+        </label><br>
+        <button type="submit">Register</button><br>
+        <a href="login.html">Already Registered? Login Here</a>
+        <div id="registerDisplay" style="display:none;">
+            <h2>Registration Successful!</h2>
+            <p id="registerInfo"></p>
+        </div>
+    </form>
+</body>
+<script src="js/reg.js"></script>
+</html>
